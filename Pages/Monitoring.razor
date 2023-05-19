@@ -1,0 +1,50 @@
+﻿@page "/monitoring"
+@using EpiConnectFrontEnd.Model;
+@using EpiConnectFrontEnd.Services;
+@inject HttpClient Http;
+@inject EmployeeService employeeService;
+
+<PageTitle>Monitoramento</PageTitle>
+<div class="container">
+    <h1>Monitoramento</h1>
+
+    <h2>Funcionarios</h2>
+
+    @if (employees == null) {
+        <p><em>Loading...</em></p>
+    }
+    else {
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>Cargo</th>
+                        <th>Setor</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var employee in employees) {
+                        <tr>
+                            <td>@employee.Name</td>
+                            <td>@employee.Phone.PhoneNumber</td>
+                            <td>@employee.Post.Description</td>
+                            <td>@employee.Post.Department.Description</td>
+                            <td class="text-center "><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+@code {
+    private EmployeeModel[]? employees;
+
+    protected override async Task OnInitializedAsync() {
+        employees = await employeeService.GetEmployeesAsync();
+    }
+}

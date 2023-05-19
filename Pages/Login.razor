@@ -1,0 +1,38 @@
+﻿@layout LoginLayout
+@page "/"
+@using EpiConnectFrontEnd.Model;
+@using System.Text.Json;
+@using System.Text;
+@using EpiConnectFrontEnd.Services;
+@inject LoginService loginService;
+
+<div class="container-fluid bg-light">
+    <div class="row justify-content-center align-items-center vh-100">
+        <div class="col-md-6 col-lg-4 bg-white rounded shadow-lg p-4">
+            <h1 class="text-center mb-4">Login</h1>
+            <hr />
+            <EditForm Model="@loginModel" OnValidSubmit="@HandleValidSubmit">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username:</label>
+                    <InputText id="username" class="form-control" @bind-Value="@loginModel.Email" />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password:</label>
+                    <InputText id="password" class="form-control" type="password" @bind-Value="@loginModel.Password" />
+                </div>
+                <button type="submit" class="btn btn-primary btn-block mb-3">Login</button>
+            </EditForm>
+            <hr />
+            <div class="text-center">
+                <p class="mb-0">Don't have an account?</p>
+                <a href="#" class="link-primary">Sign up now!</a>
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+    private LoginModel loginModel = new LoginModel();
+    private async Task HandleValidSubmit() {
+        await loginService.LoginAsync(loginModel);
+    }
+}

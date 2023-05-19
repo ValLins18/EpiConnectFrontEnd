@@ -1,0 +1,59 @@
+﻿@page "/perfil/{PersonId:int}"
+@using EpiConnectFrontEnd.Model;
+@using EpiConnectFrontEnd.Services;
+@inject EmployeeService employeeService;
+
+<h3 class="text-center">Perfil</h3>
+@if (employee == null) {
+    <p><em>Loading...</em></p>
+}
+else {
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100">
+            <div class="col-md-6 p-3">
+                <div class="card">
+                    <div class="card-image-container align-self-center m-2">
+                        <img class="card-img-top img-fluid" src="@employee.ImgPath" alt="Foto de Perfil">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Nome Completo: @employee.Name</h5>
+                        <p class="card-text">Telefone: @($"{employee.Phone.DDD}{employee.Phone.PhoneNumber}")</p>
+                        <p class="card-text">
+                            Endereço:
+                            @($"{employee.Address.Street} {employee.Address.Number}, {employee.Address.Neighborhood}, {employee.Address.City}, {employee.Address.State}")
+                        </p>
+                        <p class="card-text">Cargo: @employee.Post.Description</p>
+                        <p class="card-text">Setor:  @employee.Post.Department.Description</p>
+                        <h6 class="card-subtitle mb-2 text-muted">Lista de Equipamentos:</h6>
+                    </div>
+                    <div class="text-center">
+                        <ul class="list-group">
+                            @if (!employee.Epis.Any()) {
+                                <li class="list-group-item text-danger">Não possui Epis Cadastrados</li>
+                            } else {
+                                foreach(var epi in employee.Epis) {
+                                    <li class="list-group-item">
+                                        <a href="epi/@epi.EpiId">@epi.Name</a>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int PersonId { get; set; }
+    private EmployeeModel? employee;
+
+    protected override async Task OnInitializedAsync() {
+        employee = await employeeService.GetEmployeeByIdAsync(PersonId);
+    }
+
+}
+
+<!-- Certifique-se de incluir a referência ao Bootstrap no seu projeto -->

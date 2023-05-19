@@ -1,0 +1,13 @@
+﻿.max-img-size {
+  max-width: 100%;
+  max-height: 200px; /* Ajuste o valor conforme necessário */
+}
+.card-image-container {
+        position: relative;
+        width: 10vw;
+    }
+@media (max-width: 767.98px) {
+    .card-image-container img {
+        width: 30vw; /* Ajuste o tamanho da imagem de acordo com suas preferências */
+    }
+}
