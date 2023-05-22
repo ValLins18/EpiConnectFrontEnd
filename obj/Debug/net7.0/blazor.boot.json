@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-qqpKd+W+AFb6UxudEYEKzrz7ma81p5LrWUwPBVvHV4U=",
       "netstandard.dll": "sha256-OYYuPT3JUknj4LdYIa58zF7kDB3tCnLzjCSuhEjtKXM=",
       "System.Private.CoreLib.dll": "sha256-EVS7zPxPV\/41g2mzPwdXtwiigWxI\/SeAHme1IgyD6tc=",
-      "EpiConnectFrontEnd.dll": "sha256-kKwbmXYJHeVQdFTmRAK7j7+IdcNAJpOoO2crhWo4lrg="
+      "EpiConnectFrontEnd.dll": "sha256-W8+xaHTEU8uz3vx0cPYaVD3mECI3UbKOX4nOAQ3J\/Us="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "EpiConnectFrontEnd.pdb": "sha256-L2lNBiLcp2hm1lX33p29N68fqkKQHVYBGBaNtot0Klo="
+      "EpiConnectFrontEnd.pdb": "sha256-jwhAt4BuHnNgzy3rXeR2B9wIjXGHHm6kbV4ovB5h4uc="
     },
     "runtime": {
       "dotnet.7.0.5.4d6f6en0ai.js": "sha256-codB25EodaFEP43MDCfMBuKXU4LqurUKnQrpoMIFnPs=",

@@ -1,0 +1,35 @@
+﻿@using EpiConnectFrontEnd.Model;
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            @if (Epi != null) {
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">@Epi.Name</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nivel de Bateria: @Epi.Metrics.BatteryLevel</p>
+                    <p>Nivel de Ruido: @(Epi.Metrics.Noise ?? 0)</p>
+                    <p>Conectado?: @(Epi.Metrics.IsContingency ? "Sim":"Não")</p>
+                    <p>Protegido?: @(Epi.Metrics.IsProtected ?"Sim":"Não")</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            } else {
+                <p>Loading...</p>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public EpiModel Epi { get; set; }
+    protected override void OnParametersSet() {
+        StateHasChanged();
+        base.OnParametersSet();
+    }
+}

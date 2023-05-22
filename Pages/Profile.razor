@@ -3,11 +3,13 @@
 @using EpiConnectFrontEnd.Services;
 @inject EmployeeService employeeService;
 
+
 <h3 class="text-center">Perfil</h3>
 @if (employee == null) {
     <p><em>Loading...</em></p>
 }
 else {
+<MeuModal Epi="@epiSelecionado"></MeuModal>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 p-3">
@@ -25,15 +27,21 @@ else {
                         <p class="card-text">Cargo: @employee.Post.Description</p>
                         <p class="card-text">Setor:  @employee.Post.Department.Description</p>
                         <h6 class="card-subtitle mb-2 text-muted">Lista de Equipamentos:</h6>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">Dropdown header</h6></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
                     </div>
                     <div class="text-center">
                         <ul class="list-group">
                             @if (!employee.Epis.Any()) {
                                 <li class="list-group-item text-danger">Não possui Epis Cadastrados</li>
-                            } else {
-                                foreach(var epi in employee.Epis) {
+                            }
+                            else {
+                                foreach (var epi in employee.Epis) {
                                     <li class="list-group-item">
-                                        <a href="epi/@epi.EpiId">@epi.Name</a>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PreencherModal(epi)">@epi.Name</button>
                                     </li>
                                 }
                             }
@@ -48,10 +56,15 @@ else {
 @code {
     [Parameter]
     public int PersonId { get; set; }
-    private EmployeeModel? employee;
+    public EmployeeModel? employee;
+    public EpiModel epiSelecionado; 
 
-    protected override async Task OnInitializedAsync() {
+    protected async override Task OnInitializedAsync() {
         employee = await employeeService.GetEmployeeByIdAsync(PersonId);
+    }
+
+    public void PreencherModal(EpiModel epi) {
+        epiSelecionado = epi;
     }
 
 }
