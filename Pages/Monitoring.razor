@@ -1,5 +1,5 @@
 ﻿@page "/monitoring"
-@using EpiConnectFrontEnd.Model;
+@using EpiConnectFrontEnd.Model.ViewModel;
 @using EpiConnectFrontEnd.Services;
 @inject HttpClient Http;
 @inject EmployeeService employeeService;
@@ -19,10 +19,11 @@
                 <thead>
                     <tr>
                         <th>Nome</th>
-                        <th>Telefone</th>
+                        <th>Reponsável</th>
                         <th>Cargo</th>
                         <th>Setor</th>
                         <th>Detalhes</th>
+                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,7 +33,8 @@
                             <td>@employee.Phone.PhoneNumber</td>
                             <td>@employee.Post.Description</td>
                             <td>@employee.Post.Department.Description</td>
-                            <td class="text-center "><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
+                            <td ><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
+                            <td class="d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check")"></td>
                         </tr>
                     }
                 </tbody>
@@ -42,9 +44,24 @@
 </div>
 
 @code {
-    private EmployeeModel[]? employees;
+    private EmployeeMonitoringViewModel[]? employees;
 
     protected override async Task OnInitializedAsync() {
-        employees = await employeeService.GetEmployeesAsync();
+        employees = await GetUpdatedsEmployees();
+
+        var timer = new System.Timers.Timer(5000);
+        timer.Elapsed += async (sender, e) =>
+        {
+            employees = await GetUpdatedsEmployees();
+            StateHasChanged();
+        };
+        timer.Start();
     }
+
+    private async Task<EmployeeMonitoringViewModel[]> GetUpdatedsEmployees() {
+        await Task.Delay(1000);
+        return await employeeService.GetEmployeesForMonitoringAsync();
+    }
+
+
 }
