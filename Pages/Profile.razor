@@ -41,7 +41,7 @@ else {
                             else {
                                 foreach (var epi in employee.Epis) {
                                     <li class="list-group-item">
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PreencherModal(epi)">@epi.Name</button>
+                                        <button type="button" class="btn @SetButtomColor(epi.Alerts)" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PreencherModal(epi)">@epi.Name</button>
                                     </li>
                                 }
                             }
@@ -60,11 +60,31 @@ else {
     public EpiModel epiSelecionado; 
 
     protected async override Task OnInitializedAsync() {
-        employee = await employeeService.GetEmployeeByIdAsync(PersonId);
+        employee = await GetUpdatedEmployee(PersonId);
+
+        var timer = new System.Timers.Timer(3000);
+        timer.Elapsed += async (sender, e) =>
+        {
+            employee = await GetUpdatedEmployee(PersonId);
+            StateHasChanged();
+        };
+        timer.Start();
     }
 
     public void PreencherModal(EpiModel epi) {
         epiSelecionado = epi;
+    }
+    private async Task<EmployeeModel> GetUpdatedEmployee(int personId) {
+        await Task.Delay(1000);
+        return await employeeService.GetEmployeeByIdAsync(personId);
+
+    }
+    private string SetButtomColor(IEnumerable<AlertModel>? alerts) {
+        if(alerts == null) {
+            return "btn-primary";
+        }
+        var result = alerts.Any(a => a.IsOpen) ? "btn-danger" : "btn-primary";
+        return result; 
     }
 
 }
