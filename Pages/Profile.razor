@@ -9,7 +9,7 @@
     <p><em>Loading...</em></p>
 }
 else {
-<MeuModal Epi="@epiSelecionado"></MeuModal>
+    <MeuModal Epi="@epiSelecionado" hubConnection="@hubConnection"></MeuModal>
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
             <div class="col-md-6 p-3">
@@ -57,14 +57,14 @@ else {
     [Parameter]
     public int PersonId { get; set; }
     public EmployeeModel? employee;
-    public EpiModel epiSelecionado; 
+    public EpiModel epiSelecionado;
+    public HubConnection hubConnection;
 
     protected async override Task OnInitializedAsync() {
         employee = await GetUpdatedEmployee(PersonId);
 
         var timer = new System.Timers.Timer(3000);
-        timer.Elapsed += async (sender, e) =>
-        {
+        timer.Elapsed += async (sender, e) => {
             employee = await GetUpdatedEmployee(PersonId);
             StateHasChanged();
         };
@@ -73,6 +73,21 @@ else {
 
     public void PreencherModal(EpiModel epi) {
         epiSelecionado = epi;
+        StartMonitoring();
+    }
+
+    private async Task StartMonitoring() {
+        hubConnection = new HubConnectionBuilder()
+            .WithUrl($"https://localhost:7157/websocket{epiSelecionado.EpiId}")
+            .Build();
+
+        hubConnection.On<MetricsModel>("ReceiveMetrics", receivedMetrics => {
+            epiSelecionado.Metrics = receivedMetrics;
+            StateHasChanged();
+        });
+
+        await hubConnection.StartAsync();
+
     }
     private async Task<EmployeeModel> GetUpdatedEmployee(int personId) {
         await Task.Delay(1000);
@@ -80,11 +95,11 @@ else {
 
     }
     private string SetButtomColor(IEnumerable<AlertModel>? alerts) {
-        if(alerts == null) {
+        if (alerts == null) {
             return "btn-primary";
         }
         var result = alerts.Any(a => a.IsOpen) ? "btn-danger" : "btn-primary";
-        return result; 
+        return result;
     }
 
 }
