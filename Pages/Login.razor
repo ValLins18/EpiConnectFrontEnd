@@ -5,6 +5,7 @@
 @using System.Text;
 @using EpiConnectFrontEnd.Services;
 @inject LoginService loginService;
+@inject NavigationManager navigationManager;
 
 <div class="container-fluid bg-light">
     <div class="row justify-content-center align-items-center vh-100">
@@ -33,6 +34,11 @@
 @code {
     private LoginModel loginModel = new LoginModel();
     private async Task HandleValidSubmit() {
-        await loginService.LoginAsync(loginModel);
+        var loginSession = await loginService.LoginAsync(loginModel);
+        if(loginSession.Successful) {
+            navigationManager.NavigateTo("/monitoring");
+        } else {
+            navigationManager.NavigateTo("/");
+        }
     }
 }

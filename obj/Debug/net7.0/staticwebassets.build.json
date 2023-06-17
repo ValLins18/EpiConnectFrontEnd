@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+momkWuqtiHvzQ1xQfrxZHVIvJeQ9Bp+GLD5uoqeQRA=",
+  "Hash": "rpRnIf0VjTEzcwvw3wUQc7TlsGSzbz6VU8jTyvFHqrs=",
   "Source": "EpiConnectFrontEnd",
   "BasePath": "/",
   "Mode": "Root",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.0\\build\\net7.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\blazored.localstorage\\4.3.0\\lib\\net7.0\\Blazored.LocalStorage.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\lib\\net7.0\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.5.4d6f6en0ai.js",
@@ -218,7 +252,24 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.7\\lib\\net7.0\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\7.0.7\\lib\\net7.0\\Microsoft.AspNetCore.Components.Authorization.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
@@ -235,7 +286,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.7\\lib\\net7.0\\Microsoft.AspNetCore.Components.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
@@ -252,7 +303,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\7.0.1\\lib\\net7.0\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
@@ -269,7 +320,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.components.web\\7.0.1\\lib\\net7.0\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.WebAssembly.dll",
@@ -354,7 +405,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.0\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.aspnetcore.metadata\\7.0.7\\lib\\net7.0\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.Core.dll",
@@ -643,7 +694,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.1\\lib\\net7.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -711,7 +762,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.jsinterop\\7.0.0\\lib\\net7.0\\Microsoft.JSInterop.dll"
+      "OriginalItemSpec": "C:\\Users\\valde\\.nuget\\packages\\microsoft.jsinterop\\7.0.1\\lib\\net7.0\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.WebAssembly.dll",
@@ -3672,6 +3723,23 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.VisualBasic.dll"
     },
     {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\0dxe7vpO.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
+    },
+    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\0o52Dn88.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -3689,21 +3757,21 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.VisualBasic.Core.dll"
     },
     {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\0SRuzGCv.gz",
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\1eZ31ca5.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
       "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\1fzDJvS7.gz",
@@ -3893,6 +3961,23 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.IO.IsolatedStorage.dll"
     },
     {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\3dLsi50R.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
+    },
+    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\3LtREMLP.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -3942,23 +4027,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\dotnet.7.0.5.4d6f6en0ai.js"
-    },
-    {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\4aWxfHz1.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.JSInterop.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.JSInterop.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\4Cf1BVWB.gz",
@@ -4522,23 +4590,6 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Intrinsics.dll"
     },
     {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\BJ1K4OI+.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
-    },
-    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\BKJFv3pk.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -4571,23 +4622,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
-    },
-    {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\BrZJE5e4.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\BxBsnPaX.gz",
@@ -4707,6 +4741,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\CxFWpgrk.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Forms.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Forms.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\cXhNAg4f.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\cXrwpbP6.gz",
@@ -5049,6 +5117,23 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.Linq.dll"
     },
     {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\f32mlzOl.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Authorization.dll"
+    },
+    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\F3r+aICx.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -5372,6 +5457,23 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.CSharp.dll"
     },
     {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\IEik0C5u.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.dll"
+    },
+    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\IGTIozUW.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -5440,6 +5542,23 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.CompilerServices.VisualC.dll"
     },
     {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\IuHFeydW.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.LocalStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.LocalStorage.dll"
+    },
+    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\j6OL2XS7.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -5506,23 +5625,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Connections.Abstractions.dll"
-    },
-    {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\JZB8LcC+.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\lBavJ+on.gz",
@@ -5797,23 +5899,6 @@
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Runtime.Serialization.Xml.dll"
     },
     {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\oPw1t9oP.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Authorization.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll"
-    },
-    {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\OShE0CYb.gz",
       "SourceId": "EpiConnectFrontEnd",
       "SourceType": "Computed",
@@ -5914,6 +5999,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.DependencyInjection.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\pDAQeXCK.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Components.Web.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Components.Web.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\pf8BuKd8.gz",
@@ -6050,23 +6152,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.XmlDocument.dll"
-    },
-    {
-      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\r+hqJWF+.gz",
-      "SourceId": "EpiConnectFrontEnd",
-      "SourceType": "Computed",
-      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.AspNetCore.Metadata.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\r4xl2O+p.gz",
@@ -6832,6 +6917,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.ComponentModel.Annotations.dll"
+    },
+    {
+      "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\xHw3ptLI.gz",
+      "SourceId": "EpiConnectFrontEnd",
+      "SourceType": "Computed",
+      "ContentRoot": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\cSharpProjects\\EpiConnectFrontEnd\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\Debug\\net7.0\\build-gz\\xkCKGGFl.gz",

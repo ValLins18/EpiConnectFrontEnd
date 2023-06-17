@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EpiConnectFrontEnd", "EpiConnectFrontEnd.csproj", "{041E9F2F-AF69-46BA-8400-69C1D3693062}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{041E9F2F-AF69-46BA-8400-69C1D3693062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041E9F2F-AF69-46BA-8400-69C1D3693062}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041E9F2F-AF69-46BA-8400-69C1D3693062}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041E9F2F-AF69-46BA-8400-69C1D3693062}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B092363D-FD2B-4DEE-BB4E-273462B75B5A}
+	EndGlobalSection
+EndGlobal
