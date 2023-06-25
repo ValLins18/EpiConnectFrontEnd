@@ -11,10 +11,11 @@ using System.Text.Json;
 namespace EpiConnectFrontEnd.Services {
     public class LoginService {
         private readonly HttpClient _httpClient;
-        private readonly CustomAuthenticationStateProvider _authencationStateProvider;
+        private readonly AuthenticationStateProvider _authencationStateProvider;
         private readonly ILocalStorageService _localStorageService;
         const string BasePath = "https://localhost:5001/api/login/token";
-        public LoginService(CustomAuthenticationStateProvider authencationStateProvider, HttpClient httpClient, NavigationManager navigationManager, ILocalStorageService localStorageService) {
+        public LoginService(AuthenticationStateProvider authencationStateProvider, HttpClient httpClient, 
+            ILocalStorageService localStorageService) {
             _authencationStateProvider = authencationStateProvider;
             _httpClient = httpClient;
             _localStorageService = localStorageService;
@@ -25,16 +26,17 @@ namespace EpiConnectFrontEnd.Services {
             if(!response.IsSuccessStatusCode) {
                 return loginSession;
             }
-            await _localStorageService.SaveItemEncryptedAsync<LoginSession>("loginSession", loginSession);
-            _authencationStateProvider.MarkUserAsAuthenticated(loginModel.Email!);
+            await _localStorageService.SaveItemEncryptedAsync("loginSession", loginSession);
+            ((CustomAuthenticationStateProvider)_authencationStateProvider).MarkUserAsAuthenticated(loginSession.Token);
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", loginSession.Token);
+
 
             return loginSession;
         }
 
         public async Task LogOut() {
             await _localStorageService.RemoveItemAsync("loginSession");
-            _authencationStateProvider.MarkUserAsLoggedOut();
+            ((CustomAuthenticationStateProvider)_authencationStateProvider).MarkUserAsLoggedOut();
             _httpClient.DefaultRequestHeaders.Authorization = null;
         }
     }

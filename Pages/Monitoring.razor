@@ -1,67 +1,97 @@
 ﻿@page "/monitoring"
 @using EpiConnectFrontEnd.Model.ViewModel;
 @using EpiConnectFrontEnd.Services;
+@implements IDisposable;
 @inject HttpClient Http;
 @inject EmployeeService employeeService;
+@inject NavigationManager navigationManager;
 
 <PageTitle>Monitoramento</PageTitle>
 <div class="container">
     <h1>Monitoramento</h1>
 
     <h2>Funcionarios</h2>
-
-    @if (employees == null) {
-        <p><em>Loading...</em></p>
-    }
-    else {
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Reponsável</th>
-                        <th>Cargo</th>
-                        <th>Setor</th>
-                        <th>Detalhes</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var employee in employees) {
-                        <tr>
-                            <td>@employee.Name</td>
-                            <td>@employee.Phone.PhoneNumber</td>
-                            <td>@employee.Post.Description</td>
-                            <td>@employee.Post.Department.Description</td>
-                            <td ><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
-                            <td class="d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    }
+    <AuthorizeView>
+        <Authorized>
+            @if (employees == null) {
+                <p><em>Loading...</em></p>
+            }
+            else {
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Contato</th>
+                                <th>Contato Supervisor</th>
+                                <th>Cargo</th>
+                                <th>Setor</th>
+                                <th>Detalhes</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var employee in employees) {
+                                <tr>
+                                    <td>@employee.Name</td>
+                                    <td>@employee.Phone.PhoneNumber</td>
+                                    <td>@employee.EmployeeLeader.Phone.PhoneNumber</td>
+                                    <td>@employee.Post.Description</td>
+                                    <td>@employee.Post.Department.Description</td>
+                                    <td><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
+                                    <td class="d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+        </Authorized>
+        <NotAuthorized>
+            <RedirectToLogin/>
+        </NotAuthorized>
+    </AuthorizeView>
+ 
 </div>
 
 @code {
+    [CascadingParameter]
+    private Task<AuthenticationState> AuthenticationState { get; set; }
+
     private EmployeeMonitoringViewModel[]? employees;
+    private System.Timers.Timer timer = new System.Timers.Timer(3000);
 
     protected override async Task OnInitializedAsync() {
-        employees = await GetUpdatedsEmployees();
-
-        var timer = new System.Timers.Timer(3000);
-        timer.Elapsed += async (sender, e) =>
-        {
+        if (UserIsAuthenticated()) {
             employees = await GetUpdatedsEmployees();
-            StateHasChanged();
-        };
-        timer.Start();
-    }
 
+            timer.Elapsed += async (sender, e) => {
+                employees = await GetUpdatedsEmployees();
+                StateHasChanged();
+            };
+            timer.Start();
+            navigationManager.LocationChanged += OnLocationChange;
+        } 
+    }
+    protected override async Task OnParametersSetAsync() {
+        if (!UserIsAuthenticated()) {
+            timer.Stop();
+        }
+        await base.OnParametersSetAsync();
+    }
     private async Task<EmployeeMonitoringViewModel[]> GetUpdatedsEmployees() {
         await Task.Delay(1000);
         return await employeeService.GetEmployeesForMonitoringAsync();
     }
+    private bool UserIsAuthenticated() {
+        return AuthenticationState.Result.User.Identity.IsAuthenticated;
+    }
+    private void OnLocationChange(object sender, LocationChangedEventArgs args) {
+        timer.Stop();
+    }
 
-
+    public void Dispose() {
+        timer.Dispose();
+        navigationManager.LocationChanged -= OnLocationChange;
+    }
 }

@@ -1,0 +1,13 @@
+﻿@page "/logout"
+@using EpiConnectFrontEnd.Services;
+@inject LoginService loginService
+@inject NavigationManager NavigationManager
+
+@code {
+
+    protected override async Task OnInitializedAsync() {
+        await loginService.LogOut();
+        NavigationManager.NavigateTo("/");
+    }
+
+}

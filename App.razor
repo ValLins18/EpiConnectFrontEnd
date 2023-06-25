@@ -1,19 +1,30 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
+@using EpiConnectFrontEnd.Pages
 
-<Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
-    </Found>
-    <NotFound>
-        <CascadingAuthenticationState>
-            <PageTitle>Not found</PageTitle>
-            <LayoutView Layout="@typeof(MainLayout)">
-                <p role="alert">Sorry, there's nothing at this address.</p>
-            </LayoutView>
-        </CascadingAuthenticationState>
-    </NotFound>
-</Router>
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+                <Authorizing>
+                    <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+                    <h1>Autorizando...</h1>
+                </Authorizing>
+                <NotAuthorized>
+                    <h1>Não autorizado</h1>
+                    <RedirectToLogin/>
+                </NotAuthorized>
+            </AuthorizeRouteView>
+        </Found>
+        <NotFound>
+            <CascadingAuthenticationState>
+                <PageTitle>Not found</PageTitle>
+                <LayoutView Layout="@typeof(MainLayout)">
+                    <p role="alert">Sorry, there's nothing at this address.</p>
+                </LayoutView>
+            </CascadingAuthenticationState>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
 
 @code {
     [CascadingParameter]
@@ -23,9 +34,10 @@
         var authState = await AuthenticationStateTask;
         var user = authState.User;
 
-        if(user.Identity!.IsAuthenticated) {
+        if (user.Identity!.IsAuthenticated) {
             Console.WriteLine($"User {user.Identity.Name} is authenticated.");
-        } else {
+        }
+        else {
             Console.WriteLine("User is NOT authenticated.");
         }
     }

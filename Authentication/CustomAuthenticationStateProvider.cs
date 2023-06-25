@@ -13,7 +13,7 @@ namespace EpiConnectFrontEnd.Authentication {
         private readonly ILocalStorageService _localStorageService;
         private readonly HttpClient _httpClient;
 
-        private ClaimsPrincipal _anonymous = new ClaimsPrincipal(new ClaimsIdentity());
+        private readonly ClaimsPrincipal _anonymous = new ClaimsPrincipal(new ClaimsIdentity());
 
         public CustomAuthenticationStateProvider(ILocalStorageService localStorageService, HttpClient httpClient) {
             _localStorageService = localStorageService;
@@ -22,31 +22,36 @@ namespace EpiConnectFrontEnd.Authentication {
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync() {
             try {
-                var loginSession = await _localStorageService.ReadItemEncryptedAsync<LoginSession>("LoginSession");
+                var loginSession = await _localStorageService.ReadItemEncryptedAsync<LoginSession>("loginSession");
                 if (loginSession == null) {
                     return await Task.FromResult(new AuthenticationState(_anonymous));
                 }
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", loginSession.Token);
-
-                var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(loginSession.Token), "jwt"));
-                return await Task.FromResult(new AuthenticationState(claimsPrincipal));
+               return CreateAuthenticationState(loginSession.Token);
             }
-            catch {
+            catch (Exception e) {
+                Console.WriteLine(e);
                 return await Task.FromResult(new AuthenticationState(_anonymous));
             }
         }
 
-        public void MarkUserAsAuthenticated(string email) {
-            var authenticatedUser = new ClaimsPrincipal(new ClaimsIdentity(new[] { new Claim(ClaimTypes.Email, email) }, "apiauth"));
-            var authState = Task.FromResult(new AuthenticationState(authenticatedUser));
-            NotifyAuthenticationStateChanged(authState);
+        private AuthenticationState CreateAuthenticationState(string token) {
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
+
+            var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(token), "jwt"));
+            return new AuthenticationState(claimsPrincipal);
+        }
+
+        public Task MarkUserAsAuthenticated(string token) {
+            var authState = CreateAuthenticationState(token);
+            NotifyAuthenticationStateChanged(Task.FromResult(authState));
+            return Task.CompletedTask;
         }
         public void MarkUserAsLoggedOut() {
             var authState = Task.FromResult(new AuthenticationState(_anonymous));
             NotifyAuthenticationStateChanged(authState);
         }
 
-        private IEnumerable<Claim>? ParseClaimsFromJwt(string? token) {
+        public IEnumerable<Claim> ParseClaimsFromJwt(string? token) {
             var claims = new List<Claim>();
             var payLoad = token.Split('.')[1];
             var jsonBytes = ParseBase64WithoutPadding(payLoad);
