@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Content Remove="Pages\Profile.css.razor" />
+    <Content Remove="wwwroot\staticwebapp.config.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -16,6 +17,10 @@
 
   <ItemGroup>
     <Content Include="Pages\Profile.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\staticwebapp.config.json" />
   </ItemGroup>
 
   <ItemGroup>
