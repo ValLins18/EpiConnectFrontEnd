@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mOVB9FE8vfczdsNIma6U32M2W7I+3wHGS3O3+wjHVonGaz2MNsXDFQP10z333djpYgjPUUC5F1XDl8RBH4ZooQ==",
+  "dgSpecHash": "zm+mBCLvvdHGTPAHZ/lYPjzZ/20vLRR/4Vn6yF+8eSIQKQxwOo7oo7wYlmESVaH6LweegX6l9IVQTEuxZxv0Kw==",
   "success": true,
-  "projectFilePath": "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj",
+  "projectFilePath": "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\valde\\.nuget\\packages\\blazored.localstorage\\4.3.0\\blazored.localstorage.4.3.0.nupkg.sha512",
     "C:\\Users\\valde\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\blazored.sessionstorage.2.3.0.nupkg.sha512",
