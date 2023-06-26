@@ -113,7 +113,7 @@
     private async Task StartMonitoring() {
         var loginSession = await ReadItemEncryptedAsync<LoginSession>("loginSession");
         hubConnection = new HubConnectionBuilder()
-            .WithUrl($"https://localhost:5001/websocket{epiSelecionado.EpiId}")
+            .WithUrl($"https://epiconnectapi.azurewebsites.net/websocket{epiSelecionado.EpiId}")
             .Build();
 
         hubConnection.On<MetricsModel>("ReceiveMetrics", receivedMetrics => {
