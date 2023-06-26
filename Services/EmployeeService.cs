@@ -5,7 +5,7 @@ using static System.Net.WebRequestMethods;
 
 namespace EpiConnectFrontEnd.Services {
     public class EmployeeService : IEmployeeService {
-        const string BaseUrl = "https://localhost:5001/api/Employee";
+        const string BaseUrl = "https://epiconnectapi.azurewebsites.net/api/Employee";
         private readonly HttpClient _httpClient;
         public EmployeeService(HttpClient httpClient) {
             _httpClient = httpClient;

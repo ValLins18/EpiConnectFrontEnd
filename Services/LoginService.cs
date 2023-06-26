@@ -13,7 +13,7 @@ namespace EpiConnectFrontEnd.Services {
         private readonly HttpClient _httpClient;
         private readonly AuthenticationStateProvider _authencationStateProvider;
         private readonly ILocalStorageService _localStorageService;
-        const string BasePath = "https://localhost:5001/api/login/token";
+        const string BasePath = "https://epiconnectapi.azurewebsites.net/api/login/token";
         public LoginService(AuthenticationStateProvider authencationStateProvider, HttpClient httpClient, 
             ILocalStorageService localStorageService) {
             _authencationStateProvider = authencationStateProvider;

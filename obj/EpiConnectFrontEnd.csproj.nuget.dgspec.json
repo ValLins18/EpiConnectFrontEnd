@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj": {}
+    "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj": {}
   },
   "projects": {
-    "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj": {
+    "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj",
+        "projectUniqueName": "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj",
         "projectName": "EpiConnectFrontEnd",
-        "projectPath": "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj",
+        "projectPath": "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj",
         "packagesPath": "C:\\Users\\valde\\.nuget\\packages\\",
-        "outputPath": "D:\\cSharpProjects\\EpiConnectFrontend\\obj\\",
+        "outputPath": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\valde\\AppData\\Roaming\\NuGet\\NuGet.Config",
