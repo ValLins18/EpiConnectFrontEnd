@@ -2,7 +2,6 @@
 using EpiConnectFrontEnd.Authentication;
 using EpiConnectFrontEnd.Extensions;
 using EpiConnectFrontEnd.Model;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Net.Http.Headers;
 using System.Text;
@@ -13,15 +12,16 @@ namespace EpiConnectFrontEnd.Services {
         private readonly HttpClient _httpClient;
         private readonly AuthenticationStateProvider _authencationStateProvider;
         private readonly ILocalStorageService _localStorageService;
-        const string BasePath = "https://epiconnectapi.azurewebsites.net/api/login/token";
+        private readonly IConfiguration _configuration;
         public LoginService(AuthenticationStateProvider authencationStateProvider, HttpClient httpClient, 
-            ILocalStorageService localStorageService) {
+            ILocalStorageService localStorageService, IConfiguration configuration) {
             _authencationStateProvider = authencationStateProvider;
             _httpClient = httpClient;
             _localStorageService = localStorageService;
+            _configuration = configuration;
         }
         public async Task<LoginSession> LoginAsync(LoginModel loginModel) {
-            var response = await _httpClient.PostAsync(BasePath, new StringContent(JsonSerializer.Serialize(loginModel), Encoding.UTF8, "application/json"));
+            var response = await _httpClient.PostAsync($"{_configuration["Endpoints:baseUrl"]}/api/login/token", new StringContent(JsonSerializer.Serialize(loginModel), Encoding.UTF8, "application/json"));
             var loginSession = JsonSerializer.Deserialize<LoginSession>(await response.Content.ReadAsStringAsync(), new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
             if(!response.IsSuccessStatusCode) {
                 return loginSession;

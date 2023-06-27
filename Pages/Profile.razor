@@ -6,6 +6,7 @@
 @using System.Text.Json;
 @using System.Text;
 @implements IDisposable;
+@inject IConfiguration configuration;
 @inject EmployeeService employeeService;
 @inject ILocalStorageService localStorage;
 @inject NavigationManager navigationManager;
@@ -77,8 +78,10 @@
     public EpiModel epiSelecionado;
     public HubConnection hubConnection;
     private System.Timers.Timer timer = new System.Timers.Timer(3000);
+    private string wsBaseUrl;
 
     protected async override Task OnInitializedAsync() {
+        wsBaseUrl = configuration["Endpoints:baseUrl"];
         if (AuthenticationState.Result.User.Identity.IsAuthenticated) {
             employee = await GetUpdatedEmployee(PersonId);
 
@@ -90,10 +93,7 @@
             navigationManager.LocationChanged += OnLocationChange;
         }
     }
-    //protected override async Task OnParametersSetAsync() {
-    //    timer.Stop();
-    //    timer.Dispose();
-    //}
+
     private void OnLocationChange(object sender, LocationChangedEventArgs args) {
         timer.Stop();
         timer.Dispose();
@@ -113,7 +113,7 @@
     private async Task StartMonitoring() {
         var loginSession = await ReadItemEncryptedAsync<LoginSession>("loginSession");
         hubConnection = new HubConnectionBuilder()
-            .WithUrl($"https://epiconnectapi.azurewebsites.net/websocket{epiSelecionado.EpiId}")
+            .WithUrl($"{wsBaseUrl}/websocket{epiSelecionado.EpiId}")
             .Build();
 
         hubConnection.On<MetricsModel>("ReceiveMetrics", receivedMetrics => {
