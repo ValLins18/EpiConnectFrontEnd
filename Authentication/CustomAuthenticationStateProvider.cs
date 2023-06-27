@@ -1,6 +1,7 @@
 ﻿using Blazored.LocalStorage;
 using Blazored.SessionStorage;
 using EpiConnectFrontEnd.Extensions;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Authorization;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
@@ -12,12 +13,16 @@ namespace EpiConnectFrontEnd.Authentication {
 
         private readonly ILocalStorageService _localStorageService;
         private readonly HttpClient _httpClient;
+        private readonly NavigationManager _navigationManager;
+
 
         private readonly ClaimsPrincipal _anonymous = new ClaimsPrincipal(new ClaimsIdentity());
 
-        public CustomAuthenticationStateProvider(ILocalStorageService localStorageService, HttpClient httpClient) {
+        public CustomAuthenticationStateProvider(ILocalStorageService localStorageService, HttpClient httpClient,
+            NavigationManager navigationManager) {
             _localStorageService = localStorageService;
             _httpClient = httpClient;
+            _navigationManager = navigationManager;
         }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync() {
@@ -36,7 +41,7 @@ namespace EpiConnectFrontEnd.Authentication {
 
         private AuthenticationState CreateAuthenticationState(string token) {
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", token);
-
+            _navigationManager.NavigateTo("/monitoring");
             var claimsPrincipal = new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(token), "jwt"));
             return new AuthenticationState(claimsPrincipal);
         }
