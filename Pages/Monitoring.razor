@@ -21,25 +21,25 @@
                     <table class="table">
                         <thead>
                             <tr>
+                                <th class="text-center">Detalhes</th>
+                                <th class="text-center">Status</th>
                                 <th>Nome</th>
                                 <th>Contato</th>
                                 <th>Contato Supervisor</th>
                                 <th>Cargo</th>
                                 <th>Setor</th>
-                                <th>Detalhes</th>
-                                <th>Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var employee in employees) {
                                 <tr>
+                                    <td class="text-center"><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
+                                    <td class="text-center d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
                                     <td>@employee.Name</td>
                                     <td>@employee.Phone.PhoneNumber</td>
                                     <td>@employee.EmployeeLeader.Phone.PhoneNumber</td>
                                     <td>@employee.Post.Description</td>
                                     <td>@employee.Post.Department.Description</td>
-                                    <td><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
-                                    <td class="d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
                                 </tr>
                             }
                         </tbody>
