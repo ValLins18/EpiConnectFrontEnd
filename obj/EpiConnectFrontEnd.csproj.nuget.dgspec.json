@@ -68,6 +68,10 @@
             "Microsoft.AspNetCore.SignalR.Client": {
               "target": "Package",
               "version": "[7.0.5, )"
+            },
+            "PSC.Blazor.Components.Chartjs": {
+              "target": "Package",
+              "version": "[6.0.40, )"
             }
           },
           "imports": [

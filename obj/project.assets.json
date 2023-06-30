@@ -594,6 +594,145 @@
           }
         }
       },
+      "PSC.Blazor.Components.Chartjs/6.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.10"
+        },
+        "compile": {
+          "lib/net6.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net6.0/libman.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/psc_ico.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/Chart.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.mjs": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.mjs": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/PSC.Blazor.Components.Chartjs.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/PSC.Blazor.Components.Chartjs.props": {}
+        }
+      },
       "System.IO.Pipelines/7.0.0": {
         "type": "package",
         "compile": {
@@ -1259,6 +1398,145 @@
           "lib/net7.0/Microsoft.JSInterop.WebAssembly.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "PSC.Blazor.Components.Chartjs/6.0.40": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.10"
+        },
+        "compile": {
+          "lib/net6.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net6.0/libman.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/psc_ico.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/Chart.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.mjs": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.mjs": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/PSC.Blazor.Components.Chartjs.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/PSC.Blazor.Components.Chartjs.props": {}
         }
       },
       "System.IO.Pipelines/7.0.0": {
@@ -2247,6 +2525,94 @@
         "microsoft.jsinterop.webassembly.nuspec"
       ]
     },
+    "PSC.Blazor.Components.Chartjs/6.0.40": {
+      "sha512": "7gVrFWOeeUdCakYBRM2r3xU7awvynz5oiqrHTMkhQlYye/jSnmhZwzewSGREs75bU7x+R4pUcAyurZ0Af0Gqxw==",
+      "type": "package",
+      "path": "psc.blazor.components.chartjs/6.0.40",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/PSC.Blazor.Components.Chartjs.props",
+        "buildMultiTargeting/PSC.Blazor.Components.Chartjs.props",
+        "buildTransitive/PSC.Blazor.Components.Chartjs.props",
+        "content/libman.json",
+        "content/psc_ico.ico",
+        "content/wwwroot/Chart.js",
+        "content/wwwroot/lib/Chart.js/chart.esm.js",
+        "content/wwwroot/lib/Chart.js/chart.esm.min.js",
+        "content/wwwroot/lib/Chart.js/chart.js",
+        "content/wwwroot/lib/Chart.js/chart.min.js",
+        "content/wwwroot/lib/Chart.js/chart.mjs",
+        "content/wwwroot/lib/Chart.js/helpers.esm.js",
+        "content/wwwroot/lib/Chart.js/helpers.esm.min.js",
+        "content/wwwroot/lib/Chart.js/helpers.mjs",
+        "content/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js",
+        "content/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js",
+        "content/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js",
+        "content/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js",
+        "content/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js",
+        "content/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js",
+        "content/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js",
+        "content/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js",
+        "content/wwwroot/lib/hammer.js/hammer.js",
+        "content/wwwroot/lib/hammer.js/hammer.min.js",
+        "content/wwwroot/lib/hammer.js/hammer.min.js.map",
+        "content/wwwroot/lib/hammer.js/hammer.min.map",
+        "contentFiles/any/net6.0/libman.json",
+        "contentFiles/any/net6.0/psc_ico.ico",
+        "contentFiles/any/net6.0/wwwroot/Chart.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.esm.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/chart.mjs",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.esm.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/Chart.js/helpers.mjs",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js",
+        "contentFiles/any/net6.0/wwwroot/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.js",
+        "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js",
+        "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.js.map",
+        "contentFiles/any/net6.0/wwwroot/lib/hammer.js/hammer.min.map",
+        "lib/net6.0/PSC.Blazor.Components.Chartjs.dll",
+        "lib/net6.0/PSC.Blazor.Components.Chartjs.xml",
+        "psc.blazor.components.chartjs.6.0.40.nupkg.sha512",
+        "psc.blazor.components.chartjs.nuspec",
+        "psc_logo.png",
+        "staticwebassets/Chart.js",
+        "staticwebassets/PSC.Blazor.Components.Chartjs.bundle.scp.css",
+        "staticwebassets/lib/Chart.js/chart.esm.js",
+        "staticwebassets/lib/Chart.js/chart.esm.min.js",
+        "staticwebassets/lib/Chart.js/chart.js",
+        "staticwebassets/lib/Chart.js/chart.min.js",
+        "staticwebassets/lib/Chart.js/chart.mjs",
+        "staticwebassets/lib/Chart.js/helpers.esm.js",
+        "staticwebassets/lib/Chart.js/helpers.esm.min.js",
+        "staticwebassets/lib/Chart.js/helpers.mjs",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js",
+        "staticwebassets/lib/hammer.js/hammer.js",
+        "staticwebassets/lib/hammer.js/hammer.min.js",
+        "staticwebassets/lib/hammer.js/hammer.min.js.map",
+        "staticwebassets/lib/hammer.js/hammer.min.map"
+      ]
+    },
     "System.IO.Pipelines/7.0.0": {
       "sha512": "jRn6JYnNPW6xgQazROBLSfpdoczRw694vO5kKvMcNnpXuolEixUyw6IBuBs2Y2mlSX/LdLvyyWmfXhaI3ND1Yg==",
       "type": "package",
@@ -2414,7 +2780,8 @@
       "Microsoft.AspNetCore.Components.Authorization >= 7.0.7",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.0",
-      "Microsoft.AspNetCore.SignalR.Client >= 7.0.5"
+      "Microsoft.AspNetCore.SignalR.Client >= 7.0.5",
+      "PSC.Blazor.Components.Chartjs >= 6.0.40"
     ]
   },
   "packageFolders": {
@@ -2423,11 +2790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj",
+      "projectUniqueName": "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj",
       "projectName": "EpiConnectFrontEnd",
-      "projectPath": "D:\\cSharpProjects\\EpiConnectFrontEnd\\EpiConnectFrontEnd.csproj",
+      "projectPath": "D:\\cSharpProjects\\EpiConnectFrontend\\EpiConnectFrontEnd.csproj",
       "packagesPath": "C:\\Users\\valde\\.nuget\\packages\\",
-      "outputPath": "D:\\cSharpProjects\\EpiConnectFrontEnd\\obj\\",
+      "outputPath": "D:\\cSharpProjects\\EpiConnectFrontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\valde\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2484,6 +2851,10 @@
           "Microsoft.AspNetCore.SignalR.Client": {
             "target": "Package",
             "version": "[7.0.5, )"
+          },
+          "PSC.Blazor.Components.Chartjs": {
+            "target": "Package",
+            "version": "[6.0.40, )"
           }
         },
         "imports": [
