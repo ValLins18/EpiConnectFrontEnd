@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/cSharpProjects/EpiConnectFrontend/Pages/AlertsEpiChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxlcnRzRXBpQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/cSharpProjects/EpiConnectFrontend/Pages/DepartmentAlertsChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudEFsZXJ0c0NoYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/cSharpProjects/EpiConnectFrontend/Pages/Epis.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXBpcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

@@ -854,8 +854,6 @@ D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\Pk0kfA6n.gz
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\UR+fjrj0.gz
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\6vHodPcB.gz
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\ImR+WQsM.gz
-D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\UA+vP8tr.gz
-D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\biyYc1Bm.gz
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\YxdVUIb6.gz
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\blazor.boot.json
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\staticwebassets\msbuild.EpiConnectFrontEnd.Microsoft.AspNetCore.StaticWebAssets.props
@@ -875,3 +873,5 @@ D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\EpiConnectFrontEnd.dll
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\refint\EpiConnectFrontEnd.dll
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\EpiConnectFrontEnd.pdb
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\ref\EpiConnectFrontEnd.dll
+D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\UA+vP8tr.gz
+D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\biyYc1Bm.gz

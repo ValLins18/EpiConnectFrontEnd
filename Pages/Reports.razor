@@ -1,81 +1,30 @@
 ﻿@page "/reports"
+@using PSC.Blazor.Components.Chartjs
 @inject DepartmentService departmentService;
+@inject ReportService reportService;
+
 
 
 <h3>Relatórios</h3>
-@if (departmentAlerts == null) {
+
+@if (departmentAlerts != null) {
+    <DepartmentAlertsChart departmentAlerts="departmentAlerts"/>
+} else {
     <p>Loading...</p>
 }
-else {
-    <h5 class="text-center">Quantidade de Alertas gerados por departamento</h5>
-    <Chart Config="_config1" @ref="_chart1"></Chart>
+@if (alertsEpis != null) {
+    <AlertsEpiChart EpiAlerts="alertsEpis"/>
+} else {
+    <p>Loading...</p>
 }
 
 @code {
-    private BarChartConfig _config1;
-    private Chart _chart1;
     private List<DepartmentAlertsViewModel> departmentAlerts;
+    private List<AlertsEpiViewModel> alertsEpis;
 
     protected override async Task OnInitializedAsync() {
         await base.OnInitializedAsync();
         departmentAlerts = await departmentService.GetDepartmentAlertsAsync();
-
-        _config1 = new BarChartConfig() {
-                Options = new Options() {
-                    Plugins = new Plugins() {
-                        Legend = new Legend() {
-                            Align = Align.Center,
-                            Display = false,
-                            Position = LegendPosition.Right
-                        }
-                    },
-                    Scales = new Dictionary<string, Axis>()
-                        {
-            {
-                Scales.XAxisId, new Axis()
-                {
-                    Stacked = true,
-                    Ticks = new Ticks()
-                    {
-                        MaxRotation = 0,
-                        MinRotation = 0
-                    }
-                }
-            },
-            {
-                Scales.YAxisId, new Axis()
-                {
-                    Stacked = true
-                }
-            }
-        }
-                }
-            };
-        _config1.Data.Labels = GetChartLabels(departmentAlerts);
-        _config1.Data.Datasets.Add(new BarDataset() {
-                Label = "Value",
-                Data = GetDataSets(departmentAlerts),
-                BackgroundColor = new List<string> {
-        "#FF6384",
-        "#36A2EB",
-        "#FFCE56",
-        // Adicione mais cores conforme necessário
-    }
-            });
-    }
-
-    private List<string> GetChartLabels(List<DepartmentAlertsViewModel> departmentAlerts) {
-        var chartLabels = new List<string>();
-        foreach (var departmentAlert in departmentAlerts) {
-            chartLabels.Add(departmentAlert.DepartmentName);
-        }
-        return chartLabels;
-    }
-    private List<decimal?> GetDataSets(List<DepartmentAlertsViewModel> departmentAlerts) {
-        var datSets = new List<decimal?>();
-        foreach (var departmentAlert in departmentAlerts) {
-            datSets.Add(departmentAlert.AlertCount);
-        }
-        return datSets;
+        alertsEpis = await reportService.GetAlertsEpis();
     }
 }
