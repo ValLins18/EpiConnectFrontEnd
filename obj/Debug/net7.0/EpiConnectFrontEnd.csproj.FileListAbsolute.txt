@@ -873,5 +873,5 @@ D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\EpiConnectFrontEnd.dll
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\refint\EpiConnectFrontEnd.dll
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\EpiConnectFrontEnd.pdb
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\ref\EpiConnectFrontEnd.dll
-D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\UA+vP8tr.gz
-D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\build-gz\biyYc1Bm.gz
+D:\cSharpProjects\EpiConnectFrontEnd\obj\Debug\net7.0\build-gz\1URToDsD.gz
+D:\cSharpProjects\EpiConnectFrontEnd\obj\Debug\net7.0\build-gz\lbg+hiHV.gz

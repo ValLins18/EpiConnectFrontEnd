@@ -81,7 +81,15 @@
     }
     private async Task<EmployeeMonitoringViewModel[]> GetUpdatedsEmployees() {
         await Task.Delay(1000);
-        return await employeeService.GetEmployeesForMonitoringAsync();
+        var employees = await employeeService.GetEmployeesForMonitoringAsync();
+
+        var employeesWithAlerts = employees.Where(e => e.IsOpenAlert).ToList();
+        var employeesWithoutAlerts = employees.Where(e => !e.IsOpenAlert).ToList();
+
+        employeesWithAlerts.AddRange(employeesWithoutAlerts);
+
+        var reorganizedEmployees = employeesWithAlerts;
+        return reorganizedEmployees.ToArray();
     }
     private bool UserIsAuthenticated() {
         return AuthenticationState.Result.User.Identity.IsAuthenticated;
