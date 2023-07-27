@@ -875,3 +875,4 @@ D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\EpiConnectFrontEnd.pdb
 D:\cSharpProjects\EpiConnectFrontend\obj\Debug\net7.0\ref\EpiConnectFrontEnd.dll
 D:\cSharpProjects\EpiConnectFrontEnd\obj\Debug\net7.0\build-gz\1URToDsD.gz
 D:\cSharpProjects\EpiConnectFrontEnd\obj\Debug\net7.0\build-gz\lbg+hiHV.gz
+D:\cSharpProjects\EpiConnectFrontEnd\obj\Debug\net7.0\scopedcss\Pages\Monitoring.razor.rz.scp.css

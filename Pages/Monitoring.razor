@@ -32,7 +32,7 @@
                         </thead>
                         <tbody>
                             @foreach (var employee in employees) {
-                                <tr>
+                                <tr class="@(employee.IsOpenAlert ? "alerta" : "")">
                                     <td class="text-center"><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
                                     <td class="text-center d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
                                     <td>@employee.Name</td>
