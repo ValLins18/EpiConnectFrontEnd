@@ -1,0 +1,63 @@
+﻿@if(WorkshiftAlerts == null) {
+    <p>Loading...</p>
+}
+else {
+<div class="container">
+    <h4 class="text-center">Alertas Gerados por turno</h4>
+    <Chart Config="_config1" @ref="_chart1"></Chart>
+</div>
+}
+@code {
+    [Parameter]
+    public List<WorkshiftAlertsViewModel>? WorkshiftAlerts { get; set; }
+
+    private PieChartConfig _config1;
+    private Chart _chart1;
+
+    protected override async Task OnInitializedAsync() {
+        await base.OnInitializedAsync();
+
+        _config1 = new PieChartConfig() {
+                Options = new PieOptions() {
+                    Responsive = true
+                }
+            };
+        _config1.Data.Labels = GetChartLabels(WorkshiftAlerts);
+        _config1.Data.Datasets.Add(new PieDataset() {
+                Label = "Alertas",
+                Data = GetDataSets(WorkshiftAlerts),
+                BackgroundColor = new List<string> {
+                    "#336699",
+                    "#9966CC",
+                    "#FF6699"
+                },
+                HoverOffset = 4
+            });
+
+    }
+
+    private List<string> GetChartLabels(List<WorkshiftAlertsViewModel> workshiftAlerts) {
+        var chartLabels = new List<string>();
+        foreach (var workshiftAlert in workshiftAlerts) {
+            chartLabels.Add(workshiftAlert.WorkshiftName);
+        }
+        return chartLabels;
+    }
+    private List<decimal?> GetDataSets(List<WorkshiftAlertsViewModel> workshiftAlerts) {
+        var datSets = new List<decimal?>();
+        var total = 0;
+
+        workshiftAlerts.ForEach(w => {
+            total += w.AlertCount;
+        });
+        foreach (var workshiftAlert in workshiftAlerts) {
+            decimal percent = Math.Round(PercentCalc(workshiftAlert.AlertCount, total), 2);
+            datSets.Add(percent);
+        }
+        return datSets;
+    }
+    private decimal PercentCalc(decimal partial, decimal total) {
+        var result = partial * 100 / total;
+        return result;
+    }
+}

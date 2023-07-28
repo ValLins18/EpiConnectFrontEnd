@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/WorkshiftAlertsChart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya3NoaWZ0QWxlcnRzQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/cSharpProjects/EpiConnectFrontEnd/Shared/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
