@@ -23,7 +23,7 @@
                     <InputText id="password" class="form-control" type="password" @bind-Value="@loginModel.Password" />
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mb-3">Login</button>
-                <p class="text-danger" display="@(loginSession.Successful ? "none" : "block")">@loginSession.Error</p>
+                <p class="text-danger fw-bold" display="@(loginSession.Successful ? "none" : "block")">@loginSession.Error</p>
             </EditForm>
             <hr />
             <div class="text-center">
