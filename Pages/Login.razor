@@ -1,5 +1,6 @@
 ﻿@layout LoginLayout
 @page "/"
+@using EpiConnectFrontEnd.Authentication;
 @using EpiConnectFrontEnd.Model;
 @using System.Text.Json;
 @using System.Text;
@@ -22,6 +23,7 @@
                     <InputText id="password" class="form-control" type="password" @bind-Value="@loginModel.Password" />
                 </div>
                 <button type="submit" class="btn btn-primary btn-block mb-3">Login</button>
+                <p class="text-danger" display="@(loginSession.Successful ? "none" : "block")">@loginSession.Error</p>
             </EditForm>
             <hr />
             <div class="text-center">
@@ -33,8 +35,10 @@
 </div>
 @code {
     private LoginModel loginModel = new LoginModel();
+    private LoginSession loginSession = new LoginSession();
+
     private async Task HandleValidSubmit() {
-        var loginSession = await loginService.LoginAsync(loginModel);
+        loginSession = await loginService.LoginAsync(loginModel);
         if(loginSession.Successful) {
             navigationManager.NavigateTo("/monitoring");
         } else {
