@@ -2,6 +2,8 @@
 using EpiConnectFrontEnd.Model.ViewModel;
 using System.Net;
 using System.Net.Http.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 using static System.Net.WebRequestMethods;
 
 namespace EpiConnectFrontEnd.Services {
@@ -13,8 +15,14 @@ namespace EpiConnectFrontEnd.Services {
             _configuration = configuration;
         }
         public async Task<EmployeeMonitoringViewModel[]> GetEmployeesForMonitoringAsync() {
-            var response = await _httpClient.GetFromJsonAsync<EmployeeMonitoringViewModel[]>($"{_configuration["Endpoints:baseUrl"]}/api/Employee/Monitoring");
-            return response;
+            try {
+                var response = await _httpClient.GetFromJsonAsync<EmployeeMonitoringViewModel[]>($"{_configuration["Endpoints:baseUrl"]}/api/Employee/Monitoring");
+                return response;
+            }
+            catch (Exception e) {
+                Console.WriteLine(e.Message);
+                return new EmployeeMonitoringViewModel[] { new EmployeeMonitoringViewModel() };
+            }
         }
         public async Task<EmployeeModel> GetEmployeeByIdAsync(int personId) {
             var response = await _httpClient.GetFromJsonAsync<EmployeeModel>($"{_configuration["Endpoints:baseUrl"]}/api/Employee/{personId}");
