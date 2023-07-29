@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = EpiConnectFrontEnd
 build_property.RootNamespace = EpiConnectFrontEnd
-build_property.ProjectDir = D:\cSharpProjects\EpiConnectFrontend\
+build_property.ProjectDir = D:\cSharpProjects\EpiConnectFrontEnd\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\cSharpProjects\EpiConnectFrontend
+build_property.MSBuildProjectDirectory = D:\cSharpProjects\EpiConnectFrontEnd
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/cSharpProjects/EpiConnectFrontend/App.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/AlertsEpiChart.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/AlertsEpiChart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxlcnRzRXBpQ2hhcnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/DepartmentAlertsChart.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/DepartmentAlertsChart.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYXJ0bWVudEFsZXJ0c0NoYXJ0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Epis.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Epis.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXBpcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/EpiStatus.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/EpiStatus.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXBpU3RhdHVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Home.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Login.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/LoginDisplay.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5EaXNwbGF5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Logout.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Logout.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Monitoring.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Monitoring.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9uaXRvcmluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/RedirectToLogin.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVkaXJlY3RUb0xvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Reports.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Reports.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/SignUp.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/SignUp.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnblVwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Shared/LoginLayout.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Shared/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Shared/MeuModal.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Shared/MeuModal.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1ldU1vZGFsLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Shared/SurveyPrompt.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/_Imports.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/cSharpProjects/EpiConnectFrontend/Pages/Profile.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Pages/Profile.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-7z2zr4hqhy
 
-[D:/cSharpProjects/EpiConnectFrontend/Shared/MainLayout.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9rfiihb86i
 
-[D:/cSharpProjects/EpiConnectFrontend/Shared/NavMenu.razor]
+[D:/cSharpProjects/EpiConnectFrontEnd/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-14ywe7vfo4
