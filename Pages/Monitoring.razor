@@ -14,7 +14,11 @@
     <AuthorizeView>
         <Authorized>
             @if (employees == null) {
-                <p><em>Loading...</em></p>
+                <div class="text-center">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
             }
             else {
                 <div class="table-responsive">
@@ -32,7 +36,7 @@
                         </thead>
                         <tbody>
                             @foreach (var employee in employees) {
-                                <tr>
+                                <tr class="@(employee.IsOpenAlert ? "alerta" : "")">
                                     <td class="text-center"><a href="perfil/@employee.PersonId" class="oi oi-grid-three-up"></a></td>
                                     <td class="text-center d-table-cell @(employee.IsOpenAlert ? "text-danger oi oi-circle-x" : "text-success oi oi-circle-check ")"></td>
                                     <td>@employee.Name</td>
@@ -81,7 +85,15 @@
     }
     private async Task<EmployeeMonitoringViewModel[]> GetUpdatedsEmployees() {
         await Task.Delay(1000);
-        return await employeeService.GetEmployeesForMonitoringAsync();
+        var employees = await employeeService.GetEmployeesForMonitoringAsync();
+
+        var employeesWithAlerts = employees.Where(e => e.IsOpenAlert).ToList();
+        var employeesWithoutAlerts = employees.Where(e => !e.IsOpenAlert).ToList();
+
+        employeesWithAlerts.AddRange(employeesWithoutAlerts);
+
+        var reorganizedEmployees = employeesWithAlerts;
+        return reorganizedEmployees.ToArray();
     }
     private bool UserIsAuthenticated() {
         return AuthenticationState.Result.User.Identity.IsAuthenticated;

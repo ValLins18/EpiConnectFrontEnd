@@ -15,5 +15,10 @@ namespace EpiConnectFrontEnd.Services {
             var response = await _httpClient.GetFromJsonAsync<List<AlertsEpiViewModel>>($"{_configuration["Endpoints:baseUrl"]}/api/Epi/Alerts");
             return response;
         }
+
+        public async Task<List<WorkshiftAlertsViewModel>> GetWorkshiftAlerts() {
+            var response = await _httpClient.GetFromJsonAsync<List<WorkshiftAlertsViewModel>>($"{_configuration["Endpoints:baseUrl"]}/workshiftalerts");
+            return response;
+        }
     }
 }

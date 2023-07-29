@@ -1,0 +1,22 @@
+﻿/* Estilizando o elemento de alerta */
+.alerta {
+    animation: alertAnimation 2s infinite;
+}
+
+/* Definindo a animação */
+@keyframes alertAnimation {
+    0% {
+        background-color: white;
+        color: #FF8080;
+    }
+
+    50% {
+        background-color: #FF8080;
+        color: white;
+    }
+
+    100% {
+        background-color: white;
+        color: #FF8080;
+    }
+}

@@ -7,24 +7,46 @@
 
 <h3>Relatórios</h3>
 
+
+@if (departmentAlerts != null) {
+    <WorkshiftAlertsChart WorkshiftAlerts="workshiftAlerts" />
+} else {
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+}
+
 @if (departmentAlerts != null) {
     <DepartmentAlertsChart departmentAlerts="departmentAlerts"/>
 } else {
-    <p>Loading...</p>
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 }
+
 @if (alertsEpis != null) {
     <AlertsEpiChart EpiAlerts="alertsEpis"/>
 } else {
-    <p>Loading...</p>
+    <div class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 }
 
 @code {
     private List<DepartmentAlertsViewModel> departmentAlerts;
     private List<AlertsEpiViewModel> alertsEpis;
+    private List<WorkshiftAlertsViewModel> workshiftAlerts;
 
     protected override async Task OnInitializedAsync() {
         await base.OnInitializedAsync();
         departmentAlerts = await departmentService.GetDepartmentAlertsAsync();
         alertsEpis = await reportService.GetAlertsEpis();
+        workshiftAlerts = await reportService.GetWorkshiftAlerts();
     }
 }
