@@ -23,14 +23,6 @@ namespace EpiConnectFrontEnd.Services {
                 Console.WriteLine(e.Message);
                 return new EmployeeMonitoringViewModel[] { new EmployeeMonitoringViewModel() };
             }
-
-            //var response = await _httpClient.GetAsync($"{_configuration["Endpoints:baseUrl"]}/api/Employee/Monitoring");
-            //if(response.IsSuccessStatusCode) { 
-            //    var stringResult = await response.Content.ReadAsStringAsync();
-            //    var result = JsonSerializer.Deserialize<EmployeeMonitoringViewModel[]>(stringResult);
-            //} else if( response.StatusCode == HttpStatusCode.Unauthorized){
-
-            //}
         }
         public async Task<EmployeeModel> GetEmployeeByIdAsync(int personId) {
             var response = await _httpClient.GetFromJsonAsync<EmployeeModel>($"{_configuration["Endpoints:baseUrl"]}/api/Employee/{personId}");
